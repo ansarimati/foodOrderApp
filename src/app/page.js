@@ -1,54 +1,12 @@
-import Link from "next/link";
-
+import Header from "@/components/layout/Header";
+import Hero from "@/components/layout/Hero";
 
 export default function Home() {
 
-  const nav = [
-    {
-      title: "Home",
-      path: "/"
-    },
-    {
-      title: "Menu",
-      path: "/menu"
-    },
-    {
-      title: "About",
-      path: "/about"
-    },
-    {
-      title: "Contatc",
-      path: "/contact"
-    },
-    {
-      title: "Login",
-      path: "/login"
-    }
-  ]
-
   return (
     <>
-      <header className="flex justify-between">
-        <Link href={"/"} className="font-semibold text-primary text-2xl">
-          Mat&apos;s Pizza
-        </Link>
-
-        {/* <nav className="flex gap-4 text-gray-500 font-semibold">
-          {
-            nav.map((item)=>(
-              <Link href={item.path} key={item.title}>{item.title}</Link>
-            ))
-          }
-        </nav> */}
-
-        <nav className="flex items-center gap-4 font-semibold text-gray-500">
-          <Link href={"/"}>Home</Link>
-          <Link href={"/menu"}>Menu</Link>
-          <Link href={"/about"}>About</Link>
-          <Link href={"contact"}>Contact</Link>
-          <Link href={"login"} className="bg-primary text-white px-6 py-1 rounded-full">Login</Link>
-        </nav>
-      </header>
+      <Header />
+      <Hero /> 
     </>
   )
 }
