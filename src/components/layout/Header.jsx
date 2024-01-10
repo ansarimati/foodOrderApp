@@ -27,9 +27,6 @@ const Header = () => {
 
     return (
         <header className="flex justify-between">
-        <Link href={"/"} className="font-semibold text-primary text-2xl">
-          Mat&apos;s Pizza
-        </Link>
 
         {/* <nav className="flex gap-4 text-gray-500 font-semibold">
           {
@@ -39,7 +36,11 @@ const Header = () => {
           }
         </nav> */}
 
-        <nav className="flex items-center gap-4 font-semibold text-gray-500">
+        <nav className="flex items-center gap-10 font-semibold text-gray-500">
+          <Link href={"/"} className="font-semibold text-primary text-2xl">
+            Mat&apos;s Pizza
+          </Link>
+
           <Link href={"/"}>Home</Link>
           <Link href={"/menu"}>Menu</Link>
           <Link href={"/about"}>About</Link>
