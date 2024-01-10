@@ -44,7 +44,11 @@ const Header = () => {
           <Link href={"/menu"}>Menu</Link>
           <Link href={"/about"}>About</Link>
           <Link href={"contact"}>Contact</Link>
-          <Link href={"login"} className="bg-primary text-white px-6 py-1 rounded-full">Login</Link>
+        </nav>
+
+        <nav className="flex items-center gap-8">
+          <Link href={"/login"}>Login</Link>
+          <Link href={"/register"} className="bg-primary text-white px-6 py-1 rounded-full">Register</Link>
         </nav>
       </header>
     )
