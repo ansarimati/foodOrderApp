@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 const MenuItem = () => {
+
+  
   return (
     <div className="bg-gray-200 hover:bg-primary hover:shadow-2xl hover:shadow-black p-4 rounded-lg text-center transition-all">
         <img src="/pizza.png" alt="Pizza"/>
